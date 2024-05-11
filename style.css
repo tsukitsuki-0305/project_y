@@ -139,3 +139,29 @@ address {
 .yoshida {
   text-align: center;
 }
+
+.header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  background-color: #EEFAFF;
+
+  @media screen and (max-width: 767px) {
+    padding-left: 1rem;
+  }
+}
+
+.header__backButton {
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+  background-color: #fff;
+  height: 35px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.9rem;
+  color: #3d3d3d;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
