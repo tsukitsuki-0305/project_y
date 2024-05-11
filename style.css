@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.example {
+  /*親div*/
+  position: relative;
+  /*相対配置*/
+  background: #000;
+}
+
+.example p {
+  position: absolute;
+  /*絶対配置*/
+  color: white;
+  /*文字は白に*/
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  width: 60%;
+  font-size: 1.5vw;
+}
+
+.example img {
+  width: 100%;
+}
+
+.filter-img {
+  display: block;
+  opacity: .8;
+}
+
+.accountButton {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.95);
+  cursor: pointer;
+}
+
+.accountButton:hover {
+  border: none;
+}
+
+
+#container {
+  padding-top: 70px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+
+#contents {
+  background-color: rgba(255, 255, 255, 0.66);
+}
+
+.con1 {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+
+
+body {
+  font-family: "Tsukushi A Round Gothic", "筑紫A丸ゴシック", "游明朝", "Yu Mincho";
+  background-image: url("./image/IMG_2732.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+h1 {
+  margin-top: 1.5rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+  font-family: 'Apple Chancery', 'Corbel', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 15px;
+  letter-spacing: 0.05em;
+  font-size: 2.5vw;
+  /* background-color: rgba(255, 255, 255, 0.9); */
+  margin-top: 5%;
+}
+
+h4 {
+  text-align: center;
+  padding-top: 1rem;
+  letter-spacing: 0.05em;
+  font-size: 2vw;
+  /* background-color: rgba(255, 255, 255, 0.9); */
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  /* background-color: rgba(255, 255, 255, 0.9); */
+}
+
+th {
+  padding: 20px 10px;
+}
+
+td {
+  padding: 20px 10px;
+  font-size: 1.5vw;
+}
+
+p {
+  font-size: 1.5vw;
+  letter-spacing: 0.04em;
+  line-height: 1.6;
+  padding-left: 10%;
+  padding-right: 10%;
+  /* background-color: rgba(255, 255, 255, 0.9); */
+}
+
+small {
+  color: gray;
+}
+
+footer {
+  text-align: center;
+  font-size: 1vw;
+}
+
+address {
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-style: normal;
+  text-align: right;
+  font-size: 1.2vw;
+}
+
+.yoshida {
+  text-align: center;
+}
