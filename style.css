@@ -50,13 +50,39 @@
   margin: 0 auto;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 
 #contents {
   background-color: rgba(255, 255, 255, 0.66);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contents {
+  margin: 1rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .con1 {
   background-color: rgba(255, 255, 255, 0.95);
+  padding: 2rem 4rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#example1,
+#example2,
+#example3,
+#example4 {
+  margin-top: -100px;
+  padding-top: 100px;
 }
 
 
@@ -83,7 +109,6 @@ h2 {
   padding-bottom: 15px;
   letter-spacing: 0.05em;
   font-size: 2.5vw;
-  /* background-color: rgba(255, 255, 255, 0.9); */
   margin-top: 5%;
 }
 
@@ -92,13 +117,11 @@ h4 {
   padding-top: 1rem;
   letter-spacing: 0.05em;
   font-size: 2vw;
-  /* background-color: rgba(255, 255, 255, 0.9); */
 }
 
 table {
   width: 100%;
   text-align: center;
-  /* background-color: rgba(255, 255, 255, 0.9); */
 }
 
 th {
@@ -111,12 +134,10 @@ td {
 }
 
 p {
-  font-size: 1.5vw;
+  font-size: 1rem;
   letter-spacing: 0.04em;
   line-height: 1.6;
-  padding-left: 10%;
-  padding-right: 10%;
-  /* background-color: rgba(255, 255, 255, 0.9); */
+  margin: 0;
 }
 
 small {
@@ -137,6 +158,13 @@ address {
 }
 
 .yoshida {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.yoshida_name {
   text-align: center;
 }
 
@@ -146,12 +174,6 @@ address {
   align-items: center;
   padding-left: 2rem;
   background-color: #EEFAFF;
-}
-
-@media screen and (max-width: 767px) {
-  .header {
-    padding-left: 1rem;
-  }
 }
 
 .header__backButton {
@@ -166,4 +188,69 @@ address {
   display: flex;
   align-items: center;
   text-decoration: none;
+}
+
+.titleMark {
+  color: #da70d6;
+}
+
+.example4_text {
+  text-align: center;
+  padding: 0 0 1rem 0;
+}
+
+.example4_buttonArea {
+  text-align: center;
+}
+
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding-left: 1rem;
+  }
+
+  .contents {
+    gap: 2rem;
+  }
+
+  .con1 {
+    padding: 1rem 2rem;
+  }
+
+  h2 {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    margin: 0;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 0 0 0;
+  }
+
+  .yoshida {
+    gap: 0;
+    padding: 0 0 10px 0;
+  }
+
+  .yoshida_pic {
+    width: 30%;
+  }
+
+  td {
+    padding: 0 10px;
+    font-size: 1rem;
+    width: 30%;
+  }
+
+  .memberText {
+    padding: 0 10px 10px;
+    vertical-align: top;
+  }
 }
